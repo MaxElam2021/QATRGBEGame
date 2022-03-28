@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 	//public LayerMask groundLayer;
 	
 	public Rigidbody2D rb;
-	public Animator animator;
+	//public Animator animator; (Will unshade this when Jayden added character animation sprite for game)
 
 	bool isOnGround = true;
 
@@ -27,9 +27,9 @@ public class PlayerController : MonoBehaviour
 			movement.x = Input.GetAxisRaw("Horizontal");
 			movement.y = Input.GetAxisRaw("Vertical");
 
-			animator.SetFloat("Horizontal", movement.x);
+			/*animator.SetFloat("Horizontal", movement.x);
 			animator.SetFloat("Vertical", movement.y);
-			animator.SetFloat("Speed", movement.sqrMagnitude);
+			animator.SetFloat("Speed", movement.sqrMagnitude);*/
 	    }
     }
 
@@ -37,14 +37,14 @@ public class PlayerController : MonoBehaviour
 	{
 		if(canMove) 
 		{
-			rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+			rb.MovePosition(rb.position + movement * moveSpeed);
 		}
 	}
 
 	public void DialogEnter() {
-		animator.SetFloat("Horizontal", 0);
+		/*animator.SetFloat("Horizontal", 0);
 		animator.SetFloat("Vertical", 0);
-		animator.SetFloat("Speed", 0);
+		animator.SetFloat("Speed", 0);*/
 		canMove = false;
 	}
 

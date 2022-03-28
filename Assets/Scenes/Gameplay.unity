@@ -238,9 +238,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbdef38145664c94388f49f2c26b6e77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 70
+  moveSpeed: 1
   rb: {fileID: 615635834}
-  animator: {fileID: 0}
   canMove: 1
 --- !u!212 &615635832
 SpriteRenderer:
@@ -322,7 +321,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
