@@ -31,6 +31,6 @@ public class Health : MonoBehaviour
         healthAmount += healPoints;
         healthAmount = Mathf.Clamp(healthAmount, 0, 100);
 
-        healthBar.fillAmount = healthAmount / 30;
+        healthBar.fillAmount = healthAmount / 100;
     }
 }
