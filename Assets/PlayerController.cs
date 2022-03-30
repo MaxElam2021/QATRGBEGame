@@ -12,7 +12,6 @@ public class PlayerController : MonoBehaviour
 	public Rigidbody2D rb;
 	//public Animator animator; (Will unshade this when Jayden added character animation sprite for game)
 
-	bool isOnGround = true;
 
 	Vector2 movement;
 
