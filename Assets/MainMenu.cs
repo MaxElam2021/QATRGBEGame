@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame ()
     {
-        SceneManager.LoadScene("Cutscene1");
+        SceneManager.LoadScene("Gameplay");
     }
 
 	public void Credits ()
