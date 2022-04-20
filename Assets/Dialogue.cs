@@ -5,7 +5,8 @@ using UnityEngine;
 public class Dialogue : MonoBehaviour
 {
 	[SerializeField] GameObject dialogue;
-	PlayerMovement player;
+	PlayerController player;
+	CountdownTimer time;
 
 	bool hasShown = false;
 
@@ -15,7 +16,8 @@ public class Dialogue : MonoBehaviour
     void Start()
     {
 		dialogue.SetActive(false); 
-		player = FindObjectOfType<PlayerMovement>();
+		player = FindObjectOfType<PlayerController>();
+		time = FindObjectOfType<CountdownTimer>();
     }
 
 	void OnTriggerEnter2D(Collider2D other){
@@ -26,6 +28,7 @@ public class Dialogue : MonoBehaviour
 				dialogue.SetActive(true);
 				player.DialogEnter();
 				hasShown = true;
+				time.shouldCount = false;
 			}
 		}
 	}	

@@ -8,6 +8,7 @@ public class CountdownTimer : MonoBehaviour
 {
     float currentTime = 0f;
     float startingTime = 10f;
+    public bool shouldCount = true;
 
     [SerializeField] Text countdownText;
 
@@ -18,7 +19,12 @@ public class CountdownTimer : MonoBehaviour
 
     void Update()
     {
-        currentTime -= 1 * Time.deltaTime;
+
+        if (shouldCount)
+        {
+            currentTime -= Time.deltaTime;
+        }
+
         countdownText.text = currentTime.ToString("0");
 
 		if(currentTime <= 0)
@@ -26,5 +32,17 @@ public class CountdownTimer : MonoBehaviour
 			currentTime = 0;
 			SceneManager.LoadScene("GameOver");
 		}
+    }
+    public void DialogEnter()
+    {
+        /*animator.SetFloat("Horizontal", 0);
+		animator.SetFloat("Vertical", 0);
+		animator.SetFloat("Speed", 0);*/
+        shouldCount = false;
+    }
+
+    public void DialogExit()
+    {
+        shouldCount = true;
     }
 }
