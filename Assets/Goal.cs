@@ -15,7 +15,7 @@ public class Goal : MonoBehaviour
     {
            if (other.tag == "Player")
            {
-             SceneManager.LoadScene("GameOver");
+             SceneManager.LoadScene("WellDone");
            }
     }
 }

@@ -23,15 +23,16 @@ public class Dialogue : MonoBehaviour
 	void OnTriggerEnter2D(Collider2D other){
 		if (hasShown == false) 
 		{
-			if (other.tag == "Player") 
+			if (other.tag == "Player")
 			{
 				dialogue.SetActive(true);
-				player.DialogEnter();
+                Debug.Log("Works perfectly");
+                player.DialogEnter();
 				hasShown = true;
 				time.shouldCount = false;
 			}
 		}
-	}	
+	}
 
     // Update is called once per frame
     void Update()

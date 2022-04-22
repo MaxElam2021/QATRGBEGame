@@ -19,6 +19,6 @@ public class DialogManager : MonoBehaviour
     {
         timer.DialogExit();
         player.DialogExit();
-        
+        dialogTest.SetActive(false);
     }
 }

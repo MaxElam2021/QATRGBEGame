@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class CountdownTimer : MonoBehaviour
 {
     float currentTime = 0f;
-    float startingTime = 50000f;
+    float startingTime = 500f;
     public bool shouldCount = true;
 
     [SerializeField] Text countdownText;
@@ -35,9 +35,6 @@ public class CountdownTimer : MonoBehaviour
     }
     public void DialogEnter()
     {
-        /*animator.SetFloat("Horizontal", 0);
-		animator.SetFloat("Vertical", 0);
-		animator.SetFloat("Speed", 0);*/
         shouldCount = false;
     }
 
