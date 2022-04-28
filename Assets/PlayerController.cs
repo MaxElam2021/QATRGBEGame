@@ -48,6 +48,6 @@ public class PlayerController : MonoBehaviour
 	}
 
 	public void DialogExit() {
-		canMove = true;
+		canMove = true;                  
 	}
 }
