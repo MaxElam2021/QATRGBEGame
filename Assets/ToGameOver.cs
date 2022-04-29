@@ -16,7 +16,7 @@ public class ToGameOver : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            SceneManager.LoadScene("GameOver");
+        SceneManager.LoadScene("MainMenu");
 
         }
     }
