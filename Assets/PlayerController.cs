@@ -20,8 +20,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-	   if(canMove) 
-	
+		if(canMove)
 		{
 			movement.x = Input.GetAxisRaw("Horizontal");
 			movement.y = Input.GetAxisRaw("Vertical");
@@ -29,14 +28,15 @@ public class PlayerController : MonoBehaviour
 			/*animator.SetFloat("Horizontal", movement.x);
 			animator.SetFloat("Vertical", movement.y);
 			animator.SetFloat("Speed", movement.sqrMagnitude);*/
-	    }
+		}
     }
 
 	void FixedUpdate()
 	{
 		if(canMove) 
 		{
-			rb.MovePosition(rb.position + movement * moveSpeed);
+			//rb.MovePosition(rb.position + movement * moveSpeed); (This is shaded as that this doesn't work in the moving platforms)
+			rb.velocity = moveSpeed * movement;
 		}
 	}
 

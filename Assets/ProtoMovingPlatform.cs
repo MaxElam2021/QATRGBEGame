@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovingPlatform : MonoBehaviour
+public class ProtoMovingPlatform : MonoBehaviour
 {
     public float speed;     //Variable that allows me to speed up said platform itself
     public int startingPoint;       //starting index (Position of the platform)
     public Transform[] points;      //Array of transform point
 
-    private int i; 
-    
+    private int i;
+
     void Start()
     {
         transform.position = points[startingPoint].position;
@@ -29,20 +29,13 @@ public class MovingPlatform : MonoBehaviour
         //moving the platform to the point position with the index "i"
         transform.position = Vector2.MoveTowards(transform.position, points[i].position, speed * Time.deltaTime * 10f);
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.tag == "Player")
-        {
-            collision.transform.SetParent(gameObject.transform);
-        }
+        collision.transform.SetParent(transform);
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.tag == "Player")
-        {
-            collision.transform.SetParent(null);
-        }
+        collision.transform.SetParent(null);
     }
 }
