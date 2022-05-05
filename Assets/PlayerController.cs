@@ -38,6 +38,9 @@ public class PlayerController : MonoBehaviour
 			//rb.MovePosition(rb.position + movement * moveSpeed); (This is shaded as that this doesn't work in the moving platforms)
 			rb.velocity = moveSpeed * movement;
 		}
+		else{
+			rb.velocity = Vector3.zero;
+		}
 	}
 
 	public void DialogEnter() {
