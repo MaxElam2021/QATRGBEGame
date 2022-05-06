@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: 2dd4af40a704fad49af9fc415b83ac81
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6331207418535387404
+    second: Main Character Walking Downwards Sprite Sheet_0
+  - first:
+      213: -6166191569078145300
+    second: Main Character Walking Downwards Sprite Sheet_1
+  - first:
+      213: 1693914261988644170
+    second: Main Character Walking Downwards Sprite Sheet_2
+  - first:
+      213: -3546789898253680446
+    second: Main Character Walking Downwards Sprite Sheet_3
+  - first:
+      213: 802737497289610346
+    second: Main Character Walking Downwards Sprite Sheet_4
+  - first:
+      213: -7864747452269403815
+    second: Main Character Walking Downwards Sprite Sheet_5
+  - first:
+      213: -1669975732983427577
+    second: Main Character Walking Downwards Sprite Sheet_6
+  - first:
+      213: 495017010976807411
+    second: Main Character Walking Downwards Sprite Sheet_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +65,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +99,189 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Main Character Walking Downwards Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 32
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01ae1d5a97fcd750800000000000000
+      internalID: 6331207418535387404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Character Walking Downwards Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 32
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceea61410794d6aa0800000000000000
+      internalID: -6166191569078145300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Character Walking Downwards Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 31
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a451dc9eb0ef18710800000000000000
+      internalID: 1693914261988644170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Character Walking Downwards Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 31
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c045a5116547cec0800000000000000
+      internalID: -3546789898253680446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Character Walking Downwards Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 31
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6455dd2085e32b00800000000000000
+      internalID: 802737497289610346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Character Walking Downwards Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 31
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951e2538cddcad290800000000000000
+      internalID: -7864747452269403815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Character Walking Downwards Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 55
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e00043bed03d8e0800000000000000
+      internalID: -1669975732983427577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Character Walking Downwards Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 0
+        width: 55
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f95c094957aed600800000000000000
+      internalID: 495017010976807411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
