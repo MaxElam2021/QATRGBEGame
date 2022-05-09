@@ -139,7 +139,7 @@ TextureImporter:
       name: Main Character Walking Downwards Sprite Sheet_1
       rect:
         serializedVersion: 2
-        x: 55
+        x: 68
         y: 32
         width: 29
         height: 49
@@ -160,7 +160,7 @@ TextureImporter:
       name: Main Character Walking Downwards Sprite Sheet_2
       rect:
         serializedVersion: 2
-        x: 110
+        x: 123
         y: 31
         width: 29
         height: 49
@@ -181,7 +181,7 @@ TextureImporter:
       name: Main Character Walking Downwards Sprite Sheet_3
       rect:
         serializedVersion: 2
-        x: 165
+        x: 178
         y: 31
         width: 29
         height: 49
@@ -202,7 +202,7 @@ TextureImporter:
       name: Main Character Walking Downwards Sprite Sheet_4
       rect:
         serializedVersion: 2
-        x: 220
+        x: 233
         y: 31
         width: 29
         height: 49
@@ -223,7 +223,7 @@ TextureImporter:
       name: Main Character Walking Downwards Sprite Sheet_5
       rect:
         serializedVersion: 2
-        x: 275
+        x: 288
         y: 31
         width: 29
         height: 49
@@ -244,10 +244,10 @@ TextureImporter:
       name: Main Character Walking Downwards Sprite Sheet_6
       rect:
         serializedVersion: 2
-        x: 330
-        y: 0
-        width: 55
-        height: 100
+        x: 343
+        y: 31
+        width: 29
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,10 +265,10 @@ TextureImporter:
       name: Main Character Walking Downwards Sprite Sheet_7
       rect:
         serializedVersion: 2
-        x: 385
-        y: 0
-        width: 55
-        height: 100
+        x: 398
+        y: 31
+        width: 29
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
