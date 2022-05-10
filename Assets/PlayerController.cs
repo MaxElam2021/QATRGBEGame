@@ -6,12 +6,9 @@ public class PlayerController : MonoBehaviour
 {
 
 	public float moveSpeed = 5f;
-	//public GameObject groundChecker;
-	//public LayerMask groundLayer;
 	
 	public Rigidbody2D rb;
-	//public Animator animator; (Will unshade this when Jayden added character animation sprite for game)
-
+	public Animator animator; 
 
 	Vector2 movement;
 
@@ -25,9 +22,9 @@ public class PlayerController : MonoBehaviour
 			movement.x = Input.GetAxisRaw("Horizontal");
 			movement.y = Input.GetAxisRaw("Vertical");
 
-			/*animator.SetFloat("Horizontal", movement.x);
+			animator.SetFloat("Horizontal", movement.x);
 			animator.SetFloat("Vertical", movement.y);
-			animator.SetFloat("Speed", movement.sqrMagnitude);*/
+			animator.SetFloat("Speed", movement.sqrMagnitude);
 		}
     }
 
@@ -45,9 +42,9 @@ public class PlayerController : MonoBehaviour
 	}
 
 	public void DialogEnter() {
-		/*animator.SetFloat("Horizontal", 0);
+		animator.SetFloat("Horizontal", 0);
 		animator.SetFloat("Vertical", 0);
-		animator.SetFloat("Speed", 0);*/
+		animator.SetFloat("Speed", 0);
 		canMove = false;
 	}
 
