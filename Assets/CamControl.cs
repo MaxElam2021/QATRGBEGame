@@ -7,8 +7,8 @@ public class CamControl : MonoBehaviour
     public GameObject player;
 
     public float centerScreen = 216.8f;
-    public float minPosition = 164.2f;
-    public float maxPosition = 1165f;
+    public float minPosition = 131f;
+    public float maxPosition = 2044;
 
     // Start is called before the first frame update
     void Start()
