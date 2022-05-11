@@ -516,6 +516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 500
   rb: {fileID: 615635834}
+  animator: {fileID: 0}
   canMove: 1
 --- !u!212 &615635832
 SpriteRenderer:
@@ -727,7 +728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106d554a0e2895943b3e5d6d4ccaf9b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 5
   startingPoint: 0
   points:
   - {fileID: 1948941377}
