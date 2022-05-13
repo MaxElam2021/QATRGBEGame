@@ -17,7 +17,7 @@ public class Pickupdamage : MonoBehaviour
     {
            if (other.tag == "Player")
            {
-            health.TakeDamage(10);
+            health.TakeDamage(5);
              
            }
     }

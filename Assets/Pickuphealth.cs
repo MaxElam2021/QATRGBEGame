@@ -6,6 +6,7 @@ public class Pickuphealth : MonoBehaviour
 {
     PlayerController player;
     Health health;
+    private int pickupValue = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,7 @@ public class Pickuphealth : MonoBehaviour
         if (other.tag == "Player")
         {
             health.Healing(10);
-
+            ScoreManager.instance.ChangeScore(pickupValue);
         }
     }
 }
