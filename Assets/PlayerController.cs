@@ -41,6 +41,14 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
+	private void OnTriggerEnter2D(Collider2D other)
+	{
+		if(other.gameObject.CompareTag("Pickups"))
+		{
+			Destroy(other.gameObject);
+		}
+	}
+
 	public void DialogEnter() {
 		animator.SetFloat("Horizontal", 0);
 		animator.SetFloat("Vertical", 0);
