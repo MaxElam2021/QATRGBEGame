@@ -173,7 +173,6 @@ GameObject:
   m_Component:
   - component: {fileID: 114167857}
   - component: {fileID: 114167859}
-  - component: {fileID: 114167858}
   m_Layer: 0
   m_Name: DialogTestTrigger (1)
   m_TagString: Untagged
@@ -195,19 +194,6 @@ Transform:
   m_Father: {fileID: 1760202092}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114167858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114167856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d127cc6f6953474799026d55a1fe988, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
 --- !u!61 &114167859
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -534,7 +520,6 @@ GameObject:
   - component: {fileID: 225617568}
   - component: {fileID: 225617567}
   - component: {fileID: 225617566}
-  - component: {fileID: 225617569}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -554,7 +539,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1067162010}
-  - {fileID: 1054306562}
   m_Father: {fileID: 615635833}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -624,20 +608,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &225617569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 225617564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0045b5ad3540e034aab095946ec3a62c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shouldCount: 1
-  countdownText: {fileID: 0}
 --- !u!1 &285416119
 GameObject:
   m_ObjectHideFlags: 0
@@ -1733,7 +1703,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1044440189}
   - component: {fileID: 1044440188}
-  - component: {fileID: 1044440187}
   m_Layer: 0
   m_Name: DialogTestTrigger
   m_TagString: Untagged
@@ -1741,19 +1710,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1044440187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1044440186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d127cc6f6953474799026d55a1fe988, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
 --- !u!61 &1044440188
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1819,16 +1775,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054306561}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.35594994, y: 0.84452623, z: 0.47608307}
   m_Children: []
-  m_Father: {fileID: 225617565}
-  m_RootOrder: 1
+  m_Father: {fileID: 1067162010}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -105, y: 10.0512}
+  m_AnchoredPosition: {x: -204, y: 90}
   m_SizeDelta: {x: 1500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1054306563
@@ -1878,8 +1834,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1914,7 +1870,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 556.25995, y: 77.06374, z: 345.3742, w: 0}
+  m_margin: {x: 485.7525, y: 56.91873, z: -657.4971, w: -156.02837}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1939,6 +1895,7 @@ GameObject:
   - component: {fileID: 1067162010}
   - component: {fileID: 1067162012}
   - component: {fileID: 1067162011}
+  - component: {fileID: 1067162013}
   m_Layer: 0
   m_Name: DialogueBox
   m_TagString: Untagged
@@ -1955,14 +1912,15 @@ RectTransform:
   m_GameObject: {fileID: 1067162009}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_LocalScale: {x: 1.3375, y: 0.56372803, z: 1}
+  m_Children:
+  - {fileID: 1054306562}
   m_Father: {fileID: 225617565}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -51}
+  m_AnchoredPosition: {x: 0, y: -129}
   m_SizeDelta: {x: -200, y: -100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1067162011
@@ -2003,6 +1961,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1067162009}
   m_CullTransparentMesh: 1
+--- !u!114 &1067162013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067162009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059ae451d7dc80447bd08ae11b5075c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 1054306563}
+  lines:
+  - "Raquel Moziibi's  the name. Don\u2019t ask. And working here is a nightmare
+    for me. "
+  - 'Firstly, I received several painful shots on my feet to prevent infection. But
+    I am still infected so I have to be sent to the hospital several times. '
+  - "Secondly, the smell here is horrible and I don\u2019t have Republic Services
+    to help me."
+  - Oh, and be careful of the enemy monsters scattered across the area.
+  - They have a virus which can cause infection to you when you breathe the gas within
+    their body.
+  textSpeed: 0.1
 --- !u!1 &1122747405
 GameObject:
   m_ObjectHideFlags: 0
