@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class Dialog2 : MonoBehaviour
 {
     public Text textComponent;
+    public Text nameComponent;
+    public string[] names;
     public string[] lines;
     public float textSpeed;
     PlayerController player;
@@ -46,6 +48,7 @@ public class Dialog2 : MonoBehaviour
 
     IEnumerator TypeLine()
     {
+        nameComponent.text = names[index];
         // Type each character 1 by 1
         foreach (char c in lines[index].ToCharArray())
         {
