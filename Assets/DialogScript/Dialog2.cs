@@ -12,6 +12,9 @@ public class Dialog2 : MonoBehaviour
     public float textSpeed;
     PlayerController player;
 
+    [SerializeField] AudioSource audio;
+    [SerializeField] List<AudioClip> voiceLines;
+
     private int index;
     // Start is called before the first frame update
     void Start()
@@ -39,6 +42,7 @@ public class Dialog2 : MonoBehaviour
         }
     }
 
+    //When dialogue starts
     void StartDialogue()
     {
         index = 0;
@@ -46,6 +50,7 @@ public class Dialog2 : MonoBehaviour
         StartCoroutine(TypeLine());
     }
 
+    //Typing out dialogue
     IEnumerator TypeLine()
     {
         nameComponent.text = names[index];
@@ -57,12 +62,16 @@ public class Dialog2 : MonoBehaviour
         }
     }
 
+    //Next line in dialogue
     void NextLine()
     {
         if (index < lines.Length - 1)
         {
             index++;
             textComponent.text = string.Empty;
+            audio.Stop();
+            audio.clip = voiceLines[index];
+            audio.Play();
             StartCoroutine(TypeLine());
         }
         else
