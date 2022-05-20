@@ -407,7 +407,7 @@ MonoBehaviour:
   voiceLines:
   - {fileID: 8300000, guid: d4b11386a3668bd49a5e447fa358484c, type: 3}
   - {fileID: 8300000, guid: 70e3faa35307fef4b9b44f2b760047f3, type: 3}
-  - {fileID: 8300000, guid: 12f762537dd852441b43ead30db64c02, type: 3}
+  - {fileID: 8300000, guid: 58db046e3cd421343a85aa6ee16ac8bd, type: 3}
   - {fileID: 8300000, guid: f11a25806a5d6474ba72347a3e2f57e0, type: 3}
 --- !u!114 &85470799
 MonoBehaviour:
@@ -1592,7 +1592,7 @@ MonoBehaviour:
   audio: {fileID: 178503909}
   voiceLines:
   - {fileID: 8300000, guid: c4334af57edd39d40b09aa7b8bd0f2dd, type: 3}
-  - {fileID: 8300000, guid: fe7b5e4862c74de45a6a0ab0c2005649, type: 3}
+  - {fileID: 8300000, guid: a70b034d71b1e0c409bc9c09979e878e, type: 3}
 --- !u!114 &178503907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4131,7 +4131,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 96.25402
+  orthographic size: 79.17932
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4155,7 +4155,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 512331427}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 218.8, y: 147, z: -138}
+  m_LocalPosition: {x: 218.8, y: 130, z: -138}
   m_LocalScale: {x: 0.7295278, y: 0.30884472, z: 0.8526441}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4175,7 +4175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 615635830}
   centerScreen: 219
-  minPosition: 147
+  minPosition: 129
   maxPosition: 2061.8
 --- !u!1 &523578253
 GameObject:
@@ -6891,7 +6891,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: dcbdaef31745ab54d97d4b9f281bf29f, type: 3}
   - {fileID: 8300000, guid: 667900c9f1edb3a4382d1b8819cff85a, type: 3}
   - {fileID: 8300000, guid: 710e3005e3f5ba1499e4c3fa5e74f574, type: 3}
-  - {fileID: 8300000, guid: 710e3005e3f5ba1499e4c3fa5e74f574, type: 3}
+  - {fileID: 8300000, guid: c9fd2a045b0b8894b8f54e466897d81a, type: 3}
 --- !u!114 &918315082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9423,6 +9423,7 @@ GameObject:
   - component: {fileID: 1154337547}
   - component: {fileID: 1154337546}
   - component: {fileID: 1154337545}
+  - component: {fileID: 1154337548}
   m_Layer: 0
   m_Name: Dialog 5
   m_TagString: Untagged
@@ -9468,13 +9469,17 @@ MonoBehaviour:
   names:
   - JAX
   - JAX
+  - JAX
   lines:
   - "Alright. Here we are at the mayor\u2019s office."
   - All I can hope is, with enough evidence to confront him,
   - I can find a lawyer to help me sue him for all the charges!
   textSpeed: 0.3
-  audio: {fileID: 0}
-  voiceLines: []
+  audio: {fileID: 1154337548}
+  voiceLines:
+  - {fileID: 8300000, guid: 9e35ed4099bd60e49a48e7ad93e1115e, type: 3}
+  - {fileID: 8300000, guid: f8ce7dd48d0ebf8469ee2610383baa4f, type: 3}
+  - {fileID: 8300000, guid: 926593189df89674e999d4aff74a3eef, type: 3}
 --- !u!114 &1154337546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9513,6 +9518,102 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1154337543}
   m_CullTransparentMesh: 1
+--- !u!82 &1154337548
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154337543}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1176708939
 GameObject:
   m_ObjectHideFlags: 0
@@ -10519,7 +10620,7 @@ MonoBehaviour:
   lines:
   - "Raquel Moziibi is the name. Don\u2019t ask. And working here is a nightmare
     for me. "
-  - 'Firstly, I received several painful shots on my feet to prevent infection. But
+  - 'Firstly, I received many painful shots on my feet to prevent infection. But
     I am still infected so I have to be sent to the hospital several times. '
   - "Secondly, the smell here is horrible and I don\u2019t have Republic Services
     to help me."
@@ -11964,6 +12065,133 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1545200889
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1545200891}
+  - component: {fileID: 1545200890}
+  m_Layer: 0
+  m_Name: AudioSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1545200890
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545200889}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8e4448305f262d74baf6bca1efbb34d6, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.507
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1545200891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545200889}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 498.7314, y: 323.87915, z: -1239.1096}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1546256453
 GameObject:
   m_ObjectHideFlags: 0
