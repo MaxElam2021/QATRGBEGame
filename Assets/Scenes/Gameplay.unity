@@ -392,10 +392,12 @@ MonoBehaviour:
   nameComponent: {fileID: 122615415}
   names:
   - JAX
+  - JAX
   - TALGUEL
   - TALGUEL
   - TALGUEL
   lines:
+  - '*What the hell? Grandpa Talguel?*'
   - Grandpa Talguel? What are you doing here?
   - "The smell around the sea is uh\u2026 horrible! I can like, smell toxic crap
     around the um\u2026 sea. "
@@ -405,6 +407,7 @@ MonoBehaviour:
   textSpeed: 0.07
   audio: {fileID: 85470801}
   voiceLines:
+  - {fileID: 8300000, guid: f11a25806a5d6474ba72347a3e2f57e0, type: 3}
   - {fileID: 8300000, guid: d4b11386a3668bd49a5e447fa358484c, type: 3}
   - {fileID: 8300000, guid: 70e3faa35307fef4b9b44f2b760047f3, type: 3}
   - {fileID: 8300000, guid: 58db046e3cd421343a85aa6ee16ac8bd, type: 3}
@@ -1581,9 +1584,11 @@ MonoBehaviour:
   textComponent: {fileID: 980715953}
   nameComponent: {fileID: 2074406295}
   names:
+  - JAX
   - PRINZI
   - PRINZI
   lines:
+  - '*Hopefully he can give out context of what''s gong on.*'
   - "Yo, some people have even said that Mayor Liedling isn\u2019t the only one who
     is not giving a single crap to my dad, Fransley\u2019s problem."
   - Dad does the same disgusting job as us, but he almost died due to severe infections
@@ -1591,6 +1596,7 @@ MonoBehaviour:
   textSpeed: 0.07
   audio: {fileID: 178503909}
   voiceLines:
+  - {fileID: 8300000, guid: a70b034d71b1e0c409bc9c09979e878e, type: 3}
   - {fileID: 8300000, guid: c4334af57edd39d40b09aa7b8bd0f2dd, type: 3}
   - {fileID: 8300000, guid: a70b034d71b1e0c409bc9c09979e878e, type: 3}
 --- !u!114 &178503907
@@ -6872,22 +6878,25 @@ MonoBehaviour:
   textComponent: {fileID: 436172291}
   nameComponent: {fileID: 715801410}
   names:
+  - JAX
   - TRINRIL
   - TRINRIL
   - TRINRIL
   - TRINRIL
   lines:
+  - '*She seems... Incredibly angry.*'
   - "Mayor\u2026 Liedling? I think his name is? Is responsible for republic services."
   - 'After he owns republic services, he started to deny us hazard pay, and expects
     us to be responsible for all of our protective wear. '
   - "He refuses to cover up for our insurance, and the worst thing is, we can\u2019t
     file a lawsuit against that jerk of a life because we don\u2019t have enough
     money for a lawyer."
-  - I saw that you got photos of what is going on around the area. Find a lawyer
+  - Hey, I saw that you got photos of what is going on around the area. Find a lawyer
     before you confront mayor Liedling. Fight him in the court!
   textSpeed: 0.07
   audio: {fileID: 918315084}
   voiceLines:
+  - {fileID: 8300000, guid: c9fd2a045b0b8894b8f54e466897d81a, type: 3}
   - {fileID: 8300000, guid: dcbdaef31745ab54d97d4b9f281bf29f, type: 3}
   - {fileID: 8300000, guid: 667900c9f1edb3a4382d1b8819cff85a, type: 3}
   - {fileID: 8300000, guid: 710e3005e3f5ba1499e4c3fa5e74f574, type: 3}
@@ -10612,24 +10621,27 @@ MonoBehaviour:
   textComponent: {fileID: 163954060}
   nameComponent: {fileID: 306015174}
   names:
+  - Jax
   - RAQUEL
   - RAQUEL
   - RAQUEL
   - RAQUEL
   - RAQUEL
   lines:
+  - '*Here goes nothing...*'
   - "Raquel Moziibi is the name. Don\u2019t ask. And working here is a nightmare
     for me. "
   - 'Firstly, I received many painful shots on my feet to prevent infection. But
     I am still infected so I have to be sent to the hospital several times. '
-  - "Secondly, the smell here is horrible and I don\u2019t have Republic Services
+  - "Secondly, the smell here is horrible and I......I don\u2019t have Republic Services
     to help me."
   - Oh, and be careful of the enemy monsters scattered across the area.
   - They have a virus which can cause infection to you when you breathe the gas within
     their body.
-  textSpeed: 0.07
+  textSpeed: 0.09
   audio: {fileID: 1390218779}
   voiceLines:
+  - {fileID: 8300000, guid: 9a16004cde090c4488dfa3ff3f032366, type: 3}
   - {fileID: 8300000, guid: cea92dbdcd2c5b747986d4b79228cd51, type: 3}
   - {fileID: 8300000, guid: f29c0dd3fd847f84e852df24c83df079, type: 3}
   - {fileID: 8300000, guid: 1a51f5b33cd10fe44bd02d1d9c853218, type: 3}
