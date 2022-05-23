@@ -5,6 +5,8 @@ using UnityEngine;
 public class Dialogue : MonoBehaviour
 {
 	[SerializeField] GameObject dialogue;
+	[SerializeField] GameObject dialogueOpt;
+
 	PlayerController player;
 	CountdownTimer time;
 
@@ -12,10 +14,18 @@ public class Dialogue : MonoBehaviour
 
 	bool optionOne = true;
 
+	public bool isGoal = false;
+
     // Start is called before the first frame update
     void Start()
     {
 		dialogue.SetActive(false); 
+
+		if (isGoal)
+        {
+			dialogueOpt.SetActive(false);
+        }
+
 		player = FindObjectOfType<PlayerController>();
 		time = FindObjectOfType<CountdownTimer>();
     }
@@ -25,7 +35,19 @@ public class Dialogue : MonoBehaviour
 		{
 			if (other.tag == "Player")
 			{
-				dialogue.SetActive(true);
+				if (isGoal == false)
+				{
+					dialogue.SetActive(true);
+				} else
+                {
+					if (ScoreManager.instance.score >= 10)
+                    {
+						dialogueOpt.SetActive(true);
+                    } else
+                    {
+						dialogue.SetActive(true);
+                    }
+                }
                 Debug.Log("Works perfectly");
                 player.DialogEnter();
 				hasShown = true;
@@ -33,11 +55,6 @@ public class Dialogue : MonoBehaviour
 			}
 		}
 	}
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+	
 }
 

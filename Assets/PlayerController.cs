@@ -53,10 +53,9 @@ public class PlayerController : MonoBehaviour
 		animator.SetFloat("Horizontal", 0);
 		animator.SetFloat("Vertical", 0);
 		animator.SetFloat("Speed", 0);
-		canMove = false;
 	}
 
-	public void DialogExit() {
+	/*public void DialogExit() {
 		canMove = true;                  
-	}
+	}*/
 }

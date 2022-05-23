@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Dialog2 : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class Dialog2 : MonoBehaviour
     public string[] lines;
     public float textSpeed;
     PlayerController player;
+
+    public bool loadSceneOnFinish = false;
 
     [SerializeField] AudioSource audio;
     [SerializeField] List<AudioClip> voiceLines;
@@ -76,7 +79,13 @@ public class Dialog2 : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            if (loadSceneOnFinish == false)
+            {
+                gameObject.SetActive(false);
+            } else
+            {
+                SceneManager.LoadScene("WellDone");
+            }
         }
     }
 }

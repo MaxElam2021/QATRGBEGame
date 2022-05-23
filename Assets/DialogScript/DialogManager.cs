@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DialogManager : MonoBehaviour
 {
-    int morality = 0;
+    /*int morality = 0;
     PlayerController player;
     [SerializeField] GameObject dialogTest;
     CountdownTimer timer;
@@ -18,7 +18,6 @@ public class DialogManager : MonoBehaviour
     public void QuestionTest()
     {
         timer.DialogExit();
-        player.DialogExit();
         dialogTest.SetActive(false);
-    }
+    }*/
 }
