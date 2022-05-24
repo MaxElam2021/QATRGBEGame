@@ -35,6 +35,11 @@ public class Dialogue : MonoBehaviour
 		{
 			if (other.tag == "Player")
 			{
+                Debug.Log("Works perfectly");
+                player.DialogEnter();
+				hasShown = true;
+				time.shouldCount = false;
+
 				if (isGoal == false)
 				{
 					dialogue.SetActive(true);
@@ -46,15 +51,19 @@ public class Dialogue : MonoBehaviour
                     } else
                     {
 						dialogue.SetActive(true);
+						hasShown = false;
                     }
                 }
-                Debug.Log("Works perfectly");
-                player.DialogEnter();
-				hasShown = true;
-				time.shouldCount = false;
 			}
 		}
 	}
-	
+
+	void OnTriggerExit2D(Collider2D other)
+	{
+		dialogue.SetActive(false);
+		time.shouldCount = true;
+		player.DialogExit();
+	}
+
 }
 

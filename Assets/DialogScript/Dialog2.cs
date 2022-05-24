@@ -23,6 +23,7 @@ public class Dialog2 : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<PlayerController>();
+        player.canMove = false;
         textComponent.text = string.Empty;
         StartDialogue();
     }
