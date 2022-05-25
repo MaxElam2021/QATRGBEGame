@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
 
 	Vector2 movement;
 
+	public bool onPlatform = false;
+
 	public bool canMove = true;
 
     // Update is called once per frame
@@ -27,7 +29,6 @@ public class PlayerController : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		rb.velocity = moveSpeed * movement;
 
 		if (canMove) 
 		{

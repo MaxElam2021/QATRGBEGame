@@ -8,6 +8,7 @@ public class MovingPlatform : MonoBehaviour
     public int startingPoint;       //starting index (Position of the platform)
     public Transform[] points;      //Array of transform point
 
+
     private int i; 
     
     void Start()
@@ -35,6 +36,7 @@ public class MovingPlatform : MonoBehaviour
         if (collision.tag == "Player")
         {
             collision.transform.SetParent(gameObject.transform);
+            collision.transform.GetComponent<PlayerController>().onPlatform = true;
         }
     }
 
@@ -43,6 +45,7 @@ public class MovingPlatform : MonoBehaviour
         if (collision.tag == "Player")
         {
             collision.transform.SetParent(null);
+            collision.transform.GetComponent<PlayerController>().onPlatform = false;
         }
     }
 }

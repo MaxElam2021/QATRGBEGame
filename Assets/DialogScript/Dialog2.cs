@@ -23,7 +23,6 @@ public class Dialog2 : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<PlayerController>();
-        player.canMove = false;
         textComponent.text = string.Empty;
         StartDialogue();
     }
@@ -83,6 +82,7 @@ public class Dialog2 : MonoBehaviour
             if (loadSceneOnFinish == false)
             {
                 gameObject.SetActive(false);
+                player.canMove = true;
             } else
             {
                 SceneManager.LoadScene("WellDone");
