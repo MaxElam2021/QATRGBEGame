@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Health : MonoBehaviour
 {
     public Image healthBar;
-    public float healthAmount = 1000;
+    public float healthAmount = 100;
 
     private void Update()
     {
@@ -22,15 +22,15 @@ public class Health : MonoBehaviour
         healthAmount -= Damage;
         Debug.Log(healthBar);
 
-        healthBar.fillAmount = healthAmount / 1000;
+        healthBar.fillAmount = healthAmount / 100;
     }
 
     public void Healing(float healPoints)
     {
         Debug.Log(healPoints);
         healthAmount += healPoints;
-        healthAmount = Mathf.Clamp(healthAmount, 0, 1000);
+        healthAmount = Mathf.Clamp(healthAmount, 0, 100);
 
-        healthBar.fillAmount = healthAmount / 1000;
+        healthBar.fillAmount = healthAmount / 100;
     }
 }

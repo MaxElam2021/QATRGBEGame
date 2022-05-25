@@ -782,7 +782,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1136652171}
         m_TargetAssemblyTypeName: Introductions, Assembly-CSharp
         m_MethodName: UI
         m_Mode: 1
@@ -964,7 +964,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 250.108
+  orthographic size: 137.99147
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -988,7 +988,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 664514191}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 444, y: 246, z: -792}
+  m_LocalPosition: {x: 242, y: 137, z: -792}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2662,9 +2662,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1136652169}
         m_TargetAssemblyTypeName: Introductions, Assembly-CSharp
-        m_MethodName: Obstacles
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
