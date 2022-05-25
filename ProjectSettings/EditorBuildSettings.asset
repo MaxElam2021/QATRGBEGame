@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HowToPlay/Obstacles.unity
     guid: 06b3f4243cbf36e4082b321f35e87d33
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay/UI.unity
+    guid: 365dca0418154cd4899ce147cfe50b3e
   m_configObjects: {}
