@@ -47,4 +47,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HowToPlay/UI.unity
     guid: 365dca0418154cd4899ce147cfe50b3e
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay/ListofObstacles/SeaObstacle.unity
+    guid: 5312c65e119fbfc4d9589c02423d9279
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay/ListofObstacles/TrashObstacle.unity
+    guid: d3c28ba42f392a5408c035e4887d388f
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay/ListofObstacles/PlatformObstacle.unity
+    guid: c402a7ca973e5d041bde9b62a5a4dad1
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay/ListofObstacles/PhotoObstacle.unity
+    guid: 8637f8d7ea12b2e48b98c4fe10051f63
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay/ListofObstacles/EnemyObstacle.unity
+    guid: b7e8701124b284c4abf98a0116f4cd40
   m_configObjects: {}
